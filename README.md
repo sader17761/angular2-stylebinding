@@ -32,21 +32,21 @@ https://coursetro.com/posts/code/24/Angular-2-Class-&-Style-Binding-Tutorial
 
 ## My Notes:
 1. In app.component.ts, inside '@Component'
-  - `@Component({
+  - '@Component({
     selector: 'app-root',
-    template:
+    template: `
     <h1> {{ title }} </h1>
     <button class='myBtn' [class.extraclass]="someProperty">Call to Action</button>
     <button class='myBtn' [style.border]="someProperty ? '5px solid yellow' : 'none'">Call to Action</button>
     <br><br>
     <button class='myBtn' [ngClass]="setClasses()">Call to Action</button>
     <button class='myBtn' [ngStyle]="setStyles()">Call to Action</button>
-    ,
-    styles: [
+    `,
+    styles: [`
     .myBtn { font-size:1.7em; }
     .extraclass { background: black; color: white;}
     .anotherclass { font-weight: bold;}
-    ]
+    `]
   })
   export class AppComponent {
     title = 'Angular 2 - Class and Style Binding.';
@@ -69,4 +69,4 @@ https://coursetro.com/posts/code/24/Angular-2-Class-&-Style-Binding-Tutorial
       };
       return styles;
     }
-  }`
+  }
