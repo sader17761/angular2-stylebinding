@@ -32,7 +32,7 @@ https://coursetro.com/posts/code/24/Angular-2-Class-&-Style-Binding-Tutorial
 
 ## My Notes:
 1. In app.component.ts, inside '@Component'
-  - @Component({
+  - `@Component({
     selector: 'app-root',
     template: `
     <h1> {{ title }} </h1>
@@ -69,4 +69,4 @@ https://coursetro.com/posts/code/24/Angular-2-Class-&-Style-Binding-Tutorial
       };
       return styles;
     }
-  }
+  }`
